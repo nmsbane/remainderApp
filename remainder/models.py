@@ -13,4 +13,3 @@ class Appointement(models.Model):
     def __unicode__(self):
         return "Remainder #{0} - {1}".format(self.pk, self.message)
 
-    

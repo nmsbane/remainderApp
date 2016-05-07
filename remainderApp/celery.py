@@ -1,13 +1,15 @@
 from __future__ import absolute_import
 from celery import Celery
+from .settings import BROKER_URL
 
 import os
+
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'remainderApp.settings')
 
 from django.conf import settings
 
-app = Celery('remainderApp')
+app = Celery('remainderApp', broker=BROKER_URL)
 app.config_from_object('django.conf:settings')
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 

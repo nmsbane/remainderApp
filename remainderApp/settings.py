@@ -108,9 +108,9 @@ STATIC_URL = '/static/'
 
 EMAIL_HOST = 'smtp.gmail.com'
 
-EMAIL_HOST_USER = 'microblog.dummy@gmail.com'
+EMAIL_HOST_USER = '<your email address>'
 
-EMAIL_HOST_PASSWORD = 'microblog$dummy'
+EMAIL_HOST_PASSWORD = '<your password>'
 
 EMAIL_PORT = 587
 

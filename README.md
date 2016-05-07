@@ -10,9 +10,14 @@ Remainder application developed using django 1.8
 6. css date time picker.
 7. arrow.
 
-#### REST API `http://localhost:8000/appointments/new` 
+#### Send REST api request to `http://localhost:8000/appointments/jsonnew`
 
-Send date and time in the following format `'MM/DD/YYYY HH:mm'`
+Example POST request:
+    `{
+    "email":"madhusudhan638@gmail.com",
+    "message":"aweseome it is",
+    "time":"2016-05-07 23:57:00"
+    }`
 
 # Models:
 `class Appointement(models.Model):`

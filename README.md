@@ -13,9 +13,12 @@ Remainder application developed using django 1.8
 #### Send REST api request to `http://localhost:8000/appointments/jsonnew`
 
 Example POST request:
+    
     `{
     "email":"madhusudhan638@gmail.com",
+    
     "message":"aweseome it is",
+    
     "time":"2016-05-07 23:57:00"
     }`
 

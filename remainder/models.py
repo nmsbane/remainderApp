@@ -3,6 +3,7 @@ from timezone_field import TimeZoneField
 from django.core.urlresolvers import reverse
 from django.core.exceptions import ValidationError
 import arrow
+import pdb
 
 # Create your models here.
 
@@ -41,10 +42,11 @@ class Appointement(models.Model):
         """Save method which schedules a reminder"""
 
         # we need self.pk, so save it first
+        #pdb.set_trace()
         super(Appointement, self).save(*args, **kwargs)
 
         # Schedule a new reminder task for this appointment
         self.schedule_reminder()
 
-        super(Appointement, self).save(*args, **kwargs)
+        #super(Appointement, self).save(*args, **kwargs)
 
